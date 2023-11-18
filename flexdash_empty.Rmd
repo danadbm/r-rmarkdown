@@ -1,0 +1,45 @@
+---
+title: "Cars Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    source_code: embed
+    orientation: columns
+    vertical_layout: scroll
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # run the flexdashboard functionality
+library(tidyverse) # data manipulation, etc
+library(plotly) # interactive graphics
+library(DT) # interactive tables
+
+# load data
+data(mtcars)
+```
+
+## Column {data-width="650"}
+
+### Interactive data table
+
+```{r}
+# enter code for interactive data table here
+```
+
+## Column {data-width="350"}
+
+### Interactive visual
+
+```{r, fig.width=4, fig.height=3}
+# create a visual and save ggplot as object "p"
+
+
+# make interactive using ggplotly() function
+
+```
+
+### Number of Cars
+
+```{r}
+# Create a gauge to show number of cars
+
+```
